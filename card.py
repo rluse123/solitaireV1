@@ -48,7 +48,7 @@ class Card:
         # get the color, red or black
 
         if self.faceUp():
-            canvas.create_text(x + 5, y + 15, text=names[self.rank()], font="Times 20 italic bold", fill=self.color())
+            canvas.create_text(x + 8, y + 15, text=names[self.rank()], font="Times 20 italic bold", fill=self.color())
             if self.suit() == self.heart:
                 canvas.create_line(x + 25, y + 30, x + 35, y + 20, fill=self.color(), width=2)
                 canvas.create_line(x + 35, y + 20, x + 45, y + 30, fill=self.color(), width=2)
